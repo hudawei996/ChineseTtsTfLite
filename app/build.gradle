@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.benjaminwan.chinesettstflite'
     signingConfigs {
         debug {
             keyAlias 'androiddebugkey'
