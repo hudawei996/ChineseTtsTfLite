@@ -58,7 +58,7 @@ class MainViewModel : ViewModel() {
         }
 
     val appVer: String = try {
-        App.INSTANCE.packageManager.getPackageInfo(App.INSTANCE.packageName, 0).versionName
+        App.INSTANCE.packageManager.getPackageInfo(App.INSTANCE.packageName, 0).versionName  ?: ""
     } catch (e: Exception) {
         e.printStackTrace()
         ""
